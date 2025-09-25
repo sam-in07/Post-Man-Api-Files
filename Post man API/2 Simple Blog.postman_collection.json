@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "807bca03-b11a-4c8e-ac4a-5df019ae3ba2",
+		"name": "Simple Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39406886"
+	},
+	"item": [
+		{
+			"name": "post-categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "payload",
+							"value": "{}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "name",
+						"value": "Rabbil",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Jhon\", \"city\":\"London\",\"mobile\":\"01700000\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://basic-blog.teamrabbil.com/api/post-categories?id=1",
+					"protocol": "https",
+					"host": [
+						"basic-blog",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"post-categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post-categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://basic-blog.teamrabbil.com/api/post-categories",
+							"protocol": "https",
+							"host": [
+								"basic-blog",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"post-categories"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "57"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "253"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 22 Jul 2023 12:58:14 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"লাইব্রেরি\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"ইতিহাস\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"খেলাধুলা\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"বাংলাদেশ\\r\\n\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"বিশ্ব\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"বই ও সিনেমা\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"বিজ্ঞান\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"জীবনী\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"লাইফস্টাইল\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"উপকথা\",\n        \"created_at\": \"2023-07-19T05:49:30.000000Z\",\n        \"updated_at\": \"2023-07-19T05:49:30.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://basic-blog.teamrabbil.com/api/post-list/3",
+					"protocol": "https",
+					"host": [
+						"basic-blog",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"post-list",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post-list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://basic-blog.teamrabbil.com/api/post-list/2",
+							"protocol": "https",
+							"host": [
+								"basic-blog",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"post-list",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "58"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "407"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 22 Jul 2023 12:58:10 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 2,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T06:00:41.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 2,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T06:00:44.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 2,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T06:00:47.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post-newest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://basic-blog.teamrabbil.com/api/post-newest",
+					"protocol": "https",
+					"host": [
+						"basic-blog",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"post-newest"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post-newest",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://basic-blog.teamrabbil.com/api/post-newest",
+							"protocol": "https",
+							"host": [
+								"basic-blog",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"post-newest"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "59"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "430"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 22 Jul 2023 12:58:06 GMT"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 53,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 52,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 51,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 50,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 49,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 48,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 47,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 46,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 1,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T05:55:07.000000Z\"\n    },\n    {\n        \"id\": 45,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 10,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T06:02:47.000000Z\"\n    },\n    {\n        \"id\": 44,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"short\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। \",\n        \"category_id\": 10,\n        \"created_at\": \"2023-07-19T05:55:07.000000Z\",\n        \"updated_at\": \"2023-07-19T06:02:45.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post-details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://basic-blog.teamrabbil.com/api/post-details/1",
+					"protocol": "https",
+					"host": [
+						"basic-blog",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"post-details",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post-details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://basic-blog.teamrabbil.com/api/post-details/53",
+							"protocol": "https",
+							"host": [
+								"basic-blog",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"post-details",
+								"53"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "59"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "3034"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 22 Jul 2023 12:55:45 GMT"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"postDetails\": {\n        \"id\": 1,\n        \"list_id\": 53,\n        \"title\": \"তামিমের বিকল্প ভাবার সময়ই তো নেই!\",\n        \"img\": \"https://roar.media/wp-content/uploads/2023/07/18.png\",\n        \"content\": \"তামিম ইকবালকে ঘিরে গত কয়েকদিনে যা হলো, রায়হান রাফির হাতে এই চিত্রনাট্য পড়লে এ থেকে আরও একটা বক্স অফিস হিট সিনেমা বেরোত নিশ্চিত। তামিমের সরল মনে বলা ‘শতভাগ ফিট নই, তবুও খেলব’ উক্তি দিয়ে শুরু যেই কাণ্ড, পাল্টা জবাব, অবসর, প্রধানমন্ত্রীর হস্তক্ষেপ পেরিয়ে তার শেষটা হলো নাজমুল হাসান পাপনের আবেগতাড়িত উচ্চারণে, ‘অধিনায়ককে ছাড়া আমরা বিশ্বকাপে খেলব কী করে!’\\r\\n\\r\\nতবে সিনেমার রেশ তো কেবল দেখাতেই শেষ হয় না, ভালো-মন্দ, আলোচনা-সমালোচনারও জায়গা থাকে। শুক্রবারের পর থেকে যেমন প্রশ্ন উঠছে, তামিমের ফেরত আসাটা জরুরি ছিল কি না।\\r\\n\\r\\nনিখাঁদ ব্যাটার হিসেবে যদি চিন্তা করা যায়, তামিম কি খেলার মতো অবস্থায় আছেন এখন? ফিজিও ও দলের কোচ চণ্ডিকা হাথুরুসিংহের সঙ্গে তার যে আলাপ হয়েছে, তাতে বোঝা যায়, আফগানিস্তানের বিপক্ষে সিরিজটা তিনি খেলতে চেয়েছিলেন নিজের ম্যাচ ফিটনেস বুঝতেই। এবং, একমাত্র ম্যাচে যে ইঙ্গিত পেলেন, তাতে উপলব্ধিটা হতাশাব্যঞ্জকই হওয়ার কথা। ফজল হক ফারুকীর যে বলে সেদিন আউট হয়েছেন তিনি, গুড লেংথের শর্টার সাইডে পড়া বলটা কোনোভাবেই ফ্রন্ট ফুটে খেলার মতো ছিল না। কী করা উচিত ছিল, সেটা এর কয়েক বল আগে তিনি নিজেই দেখিয়েছেন। একই লেংথের বলটা কাট করেছিলেন, চার পেয়েছিলেন।\\r\\n\\r\\nবয়স বাড়লে হাত-পায়ের পেশিগুলোতে শিথিলতা আসাটা স্বাভাবিক, প্রতিক্রিয়া দেখানোর সময় বেড়ে যাওয়াটাও নরমাল। বয়স ৩৫-এর দাগ পেরিয়েছে, ডেভিড ওয়ার্নার থেকে রোহিত শর্মা, সবাই তো সংগ্রাম করছেন বয়সের ছাপ ব্যাটিংয়ে পড়তে না দেওয়ার মিশনে নেমে। তামিমের সংগ্রামটা আরও বেড়ে যাচ্ছে একই সময়ে ফিটনেস নিয়েও লড়তে হচ্ছে বলে। কোমরের ব্যথা, শরীর ভারী হয়ে যাওয়া – তামিমের এসব সমস্যা তো দৃশ্যমান খালি চোখেই।\\r\\n\\r\\nএমনিতেই তার ফ্রন্ট ফুট স্ট্রাইডটা খুব লম্বা, সব বলই খেলতে চান ফ্রন্ট ফুটে। শরীর পাতলা না হলে পেছনের পায়ে যাওয়াটা অনেক কঠিন তার জন্যে। যে বলটায় আউট হলেন, তার শরীর ওই মুহূর্তে প্রতিক্রিয়া দেখাতে পারেনি, তাকে ব্যাকফুটে যেতে হবে। তার প্রতিক্রিয়াটা হলো হাত-সর্বস্ব। তিনি খোঁচা মারলেন।\\r\\n\\r\\nফিটনেসের এমন অবস্থা নিয়েই বিশ্বকাপে গেলে ওই দুই মাস তার খুব ভালো কাটবে, নিন্দুকেরা জবাব পাবেন তার ব্যাটের তোড়ে, এমন আশাটা একটু বল্গাছাড়াই। অলৌকিকটা তো এত আচমকাও ঘটে না।\\r\\n\\r\\nতামিমের অবসর ভেঙে ফেরাটা তামিমের জন্য কতটুকু ভালো হলো, এই প্রশ্নটা তাই থাকছেই। কিন্তু, তার ফেরাতে দল যে উপকার পাবে, এটা বেশ নিঃসংশয়। তবুও গণতান্ত্রিক পৃথিবীতে দ্বিমত করার সুযোগ যেহেতু থাকছেই, নিঃসংশয় কথারও ব্যাখ্যা করা উচিত।\\r\\n\\r\\nতামিম যদি না-ই খেলতেন, সেক্ষেত্রে বাংলাদেশকে সবার প্রথমে খুঁজতে হতো ওপেনিংয়ে লিটন দাসের সঙ্গীকে। যে কাজটা আগের চার বছরে করেনি বাংলাদেশ। লিটন আর তামিমের বাইরে পাঁচটা ম্যাচও পাননি তৃতীয় কোনো ওপেনিং ব্যাটার। বিশ্বকাপের আগে আর বড়জোর পাওয়ার কথা ১০টা ম্যাচ, সেটাও বাংলাদেশ এশিয়া কাপের ফাইনালে উঠবে ধরে নিয়ে, এই সময়ে দলের সেট-আপে নতুন কেউ এসেই মাত করে দেবেন, এমন বাজি ধরতে ইলন মাস্কই হতে হবে।\",\n        \"created_at\": \"2023-07-19T06:07:44.000000Z\",\n        \"updated_at\": \"2023-07-19T10:58:07.000000Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

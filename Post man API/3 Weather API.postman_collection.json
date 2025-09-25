@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "9fefaac4-2d8b-475d-9265-bc78de9c496d",
+		"name": "Weather API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39406886"
+	},
+	"item": [
+		{
+			"name": "Current Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.weatherapi.com/v1/current.json?key=291e2d051e624ed488974910240410&q=Dhaka",
+					"protocol": "http",
+					"host": [
+						"api",
+						"weatherapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "291e2d051e624ed488974910240410"
+						},
+						{
+							"key": "q",
+							"value": "Dhaka"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

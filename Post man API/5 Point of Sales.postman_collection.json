@@ -1,0 +1,3424 @@
+{
+	"info": {
+		"_postman_id": "0ceb580a-8a56-48eb-80bb-dd691d88a778",
+		"name": "Point of Sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39406886"
+	},
+	"item": [
+		{
+			"name": "UserModule",
+			"item": [
+				{
+					"name": "1. user-registration",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Rabbil\",\n    \"lastName\":\"Hasan\",\n    \"email\":\"engr.rabbil3332@gmail.com\",\n    \"password\":\"abc123\",\n    \"mobile\":\"01785388919\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/user-registration",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"user-registration"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "1. user-registration",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Rabbil\",\n    \"lastName\":\"Hasan\",\n    \"email\":\"engr.rabbil3332@gmail.com\",\n    \"password\":\"abc123\",\n    \"mobile\":\"01785388919\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/user-registration",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"user-registration"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "59"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:06:47 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User Registration Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "2. user-login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"engr.rabbil@yahoo.com\",\n    \"password\":\"abc123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/user-login",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"user-login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "2. user-login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"engr.rabbil@yahoo.com\",\n    \"password\":\"abc123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/user-login",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"user-login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "58"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "set-cookie",
+									"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsYXJhdmVsLXRva2VuIiwiaWF0IjoxNzM0MzUwODMyLCJleHAiOjE3MzY5NDI4MzIsInVzZXJFbWFpbCI6ImVuZ3IucmFiYmlsQHlhaG9vLmNvbSIsInVzZXJJRCI6MX0.bU1kHdORhgknc7W6GTXJL67Jx61OZNk-YRRS24w6T8w; expires=Sun, 09 Aug 5322 19:19:12 GMT; Max-Age=104063641920; path=/; secure; httponly; samesite=lax"
+								},
+								{
+									"key": "content-length",
+									"value": "234"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:07:12 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User Login Successful\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsYXJhdmVsLXRva2VuIiwiaWF0IjoxNzM0MzUwODMyLCJleHAiOjE3MzY5NDI4MzIsInVzZXJFbWFpbCI6ImVuZ3IucmFiYmlsQHlhaG9vLmNvbSIsInVzZXJJRCI6MX0.bU1kHdORhgknc7W6GTXJL67Jx61OZNk-YRRS24w6T8w\"\n}"
+						}
+					]
+				},
+				{
+					"name": "3. logout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "16|Dqmk4TTgHMqzWYEyzfIUr7M0hYniQiWOEHFN3jn3a279de59",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/logout",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4. send-otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"engr.rabbil@yahoo.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/send-otp",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"send-otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "4. send-otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"engr.rabbil@yahoo.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/send-otp",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"send-otp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "56"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "71"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:07:37 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"4 Digit 7950 Code has been send to your email !\"\n}"
+						}
+					]
+				},
+				{
+					"name": "5. verify-otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"engr.rabbil@yahoo.com\",\n    \"otp\":\"7950\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/verify-otp",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"verify-otp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "5. verify-otp",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"engr.rabbil@yahoo.com\",\n    \"otp\":\"7950\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/verify-otp",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"verify-otp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "set-cookie",
+									"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsYXJhdmVsLXRva2VuIiwiaWF0IjoxNzM0MzUwODkwLCJleHAiOjE3MzQzNTIwOTAsInVzZXJFbWFpbCI6ImVuZ3IucmFiYmlsQHlhaG9vLmNvbSIsInVzZXJJRCI6IjAifQ.UuD4LnAOsNhgcWPWiFWZ4QQSLa8ub9ojr43HcFHzfz0; expires=Wed, 15 Jan 2025 12:08:10 GMT; Max-Age=2592000; path=/; secure; httponly; samesite=lax"
+								},
+								{
+									"key": "content-length",
+									"value": "240"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:08:10 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"OTP Verification Successful\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsYXJhdmVsLXRva2VuIiwiaWF0IjoxNzM0MzUwODkwLCJleHAiOjE3MzQzNTIwOTAsInVzZXJFbWFpbCI6ImVuZ3IucmFiYmlsQHlhaG9vLmNvbSIsInVzZXJJRCI6IjAifQ.UuD4LnAOsNhgcWPWiFWZ4QQSLa8ub9ojr43HcFHzfz0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "6. reset-password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\":\"abc123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/reset-password",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"reset-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "6. reset-password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"password\":\"abc123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/reset-password",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"reset-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "58"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "49"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:08:23 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Request Successful\"\n}"
+						}
+					]
+				},
+				{
+					"name": "7. user-profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/user-profile",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"user-profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "7. user-profile",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE}}/user-profile",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"user-profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "57"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "197"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:08:31 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Request Successful\",\n    \"data\": {\n        \"id\": 1,\n        \"firstName\": \"Rabbil Hasan\",\n        \"lastName\": \"Rupom\",\n        \"email\": \"engr.rabbil@yahoo.com\",\n        \"mobile\": \"01785388919\",\n        \"password\": \"abc123\",\n        \"otp\": \"0\",\n        \"created_at\": \"2024-08-18T21:17:41.000000Z\",\n        \"updated_at\": \"2024-12-16T12:08:23.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "8. update-profile",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Rabbil\",\n    \"lastName\":\"Hasan\",\n    \"email\":\"engr.rabbil3332@gmail.com\",\n    \"password\":\"abc123\",\n    \"mobile\":\"01785388919\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/user-update",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"user-update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "8. update-profile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Rabbil\",\n    \"lastName\":\"Hasan\",\n    \"email\":\"engr.rabbil3332@gmail.com\",\n    \"password\":\"abc123\",\n    \"mobile\":\"01785388919\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/user-update",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"user-update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "55"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "49"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:08:59 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Request Successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CategoryModule",
+			"item": [
+				{
+					"name": "create-catgeory",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"MY FOOD CATEGORY\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/create-category",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"create-category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create-catgeory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"MY FOOD CATEGORY\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/create-category",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"create-category"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "95"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:09:26 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"MY FOOD CATEGORY\",\n    \"user_id\": \"1\",\n    \"updated_at\": \"2024-12-16T12:09:26.000000Z\",\n    \"created_at\": \"2024-12-16T12:09:26.000000Z\",\n    \"id\": 93\n}"
+						}
+					]
+				},
+				{
+					"name": "update-category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"New Category Name\",\n    \"id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/update-category",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"update-category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update-category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"New Category Name\",\n    \"id\":\"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/update-category",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"update-category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "57"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:10:20 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "delete-category",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"93\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/delete-category",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"delete-category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete-category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"93\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/delete-category",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"delete-category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "56"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:10:58 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "Category-by-id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/category-by-id",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"category-by-id"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Category-by-id",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/category-by-id",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"category-by-id"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "58"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "100"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:10:38 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"New Category Name\",\n    \"user_id\": 1,\n    \"created_at\": \"2024-08-19T03:48:13.000000Z\",\n    \"updated_at\": \"2024-12-16T12:10:20.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "list-category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/list-category",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"list-category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list-category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE}}/list-category",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"list-category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "558"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:10:30 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"New Category Name\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:48:13.000000Z\",\n        \"updated_at\": \"2024-12-16T12:10:20.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Pastries & Croissants\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:48:18.000000Z\",\n        \"updated_at\": \"2024-08-19T03:48:18.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Cakes & Tortes\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:48:23.000000Z\",\n        \"updated_at\": \"2024-08-19T03:48:23.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Muffins & Cupcakes\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:48:28.000000Z\",\n        \"updated_at\": \"2024-08-19T03:48:28.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Cookies & Biscotti\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:48:34.000000Z\",\n        \"updated_at\": \"2024-08-19T03:48:34.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Sandwiches & Savory Bake\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:48:55.000000Z\",\n        \"updated_at\": \"2024-08-20T11:26:16.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Gluten-Free Treats\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:48:59.000000Z\",\n        \"updated_at\": \"2024-08-19T03:48:59.000000Z\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Vegan & Dairy-Free Delights\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:49:04.000000Z\",\n        \"updated_at\": \"2024-08-19T03:49:04.000000Z\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"mango\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-22T05:46:14.000000Z\",\n        \"updated_at\": \"2024-08-22T05:46:14.000000Z\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"asassfsdf\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-22T05:46:46.000000Z\",\n        \"updated_at\": \"2024-08-22T05:46:46.000000Z\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"errtretert\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-22T10:32:18.000000Z\",\n        \"updated_at\": \"2024-08-22T10:32:18.000000Z\"\n    },\n    {\n        \"id\": 26,\n        \"name\": \"test\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-23T10:06:01.000000Z\",\n        \"updated_at\": \"2024-08-23T10:06:01.000000Z\"\n    },\n    {\n        \"id\": 27,\n        \"name\": \"test123q32e123123\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-23T14:42:06.000000Z\",\n        \"updated_at\": \"2024-09-03T13:45:09.000000Z\"\n    },\n    {\n        \"id\": 58,\n        \"name\": \"test new\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-09-18T05:37:41.000000Z\",\n        \"updated_at\": \"2024-10-08T01:01:12.000000Z\"\n    },\n    {\n        \"id\": 72,\n        \"name\": \"Laptop\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-10-14T00:18:25.000000Z\",\n        \"updated_at\": \"2024-10-14T00:18:25.000000Z\"\n    },\n    {\n        \"id\": 74,\n        \"name\": \"Phonea\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-10-14T00:30:55.000000Z\",\n        \"updated_at\": \"2024-10-14T05:00:53.000000Z\"\n    },\n    {\n        \"id\": 84,\n        \"name\": \"mo\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-10-25T13:18:11.000000Z\",\n        \"updated_at\": \"2024-10-25T13:18:11.000000Z\"\n    },\n    {\n        \"id\": 86,\n        \"name\": \"orange\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-11-03T09:09:17.000000Z\",\n        \"updated_at\": \"2024-11-03T09:09:17.000000Z\"\n    },\n    {\n        \"id\": 93,\n        \"name\": \"MY FOOD CATEGORY\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-12-16T12:09:26.000000Z\",\n        \"updated_at\": \"2024-12-16T12:09:26.000000Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CustomerModule",
+			"item": [
+				{
+					"name": "create-customer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"demo\",\n    \"email\":\"demo@demo.com\",\n    \"mobile\":\"11111111111\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/create-customer",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"create-customer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create-customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"demo\",\n    \"email\":\"demo@demo.com\",\n    \"mobile\":\"11111111111\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/create-customer",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"create-customer"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "55"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "111"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:11:13 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"demo\",\n    \"email\": \"demo@demo.com\",\n    \"mobile\": \"11111111111\",\n    \"user_id\": \"1\",\n    \"updated_at\": \"2024-12-16T12:11:13.000000Z\",\n    \"created_at\": \"2024-12-16T12:11:13.000000Z\",\n    \"id\": 67\n}"
+						}
+					]
+				},
+				{
+					"name": "update-customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"demo1\",\n    \"email\":\"demo1@demo.com\",\n    \"mobile\":\"100000123\",\n    \"id\":\"67\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/update-customer",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"update-customer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update-customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"demo1\",\n    \"email\":\"demo1@demo.com\",\n    \"mobile\":\"100000123\",\n    \"id\":\"67\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/update-customer",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"update-customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "54"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:11:28 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "delete-customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"67\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/delete-customer",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"delete-customer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete-customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"67\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/delete-customer",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"delete-customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "56"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:12:26 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "list-customer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/list-customer",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"list-customer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list-customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE}}/list-customer",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"list-customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "58"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "504"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:11:59 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"John Doe\",\n        \"email\": \"john.doe@example.com\",\n        \"mobile\": \"+1234567890\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:49:54.000000Z\",\n        \"updated_at\": \"2024-08-19T03:49:54.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Emily Watson\",\n        \"email\": \"emily.watson@example.com\",\n        \"mobile\": \"+1234567890\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:50:35.000000Z\",\n        \"updated_at\": \"2024-08-19T03:50:35.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Michael Johnson\",\n        \"email\": \"michael.johnson@example.com\",\n        \"mobile\": \"+1234567891\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:50:52.000000Z\",\n        \"updated_at\": \"2024-08-19T03:50:52.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Sophia Martinez\",\n        \"email\": \"sophia.martinez@example.com\",\n        \"mobile\": \"+1234567892\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n        \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Olivia Brown\",\n        \"email\": \"olivia.brown@example.com\",\n        \"mobile\": \"+1234567894\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:51:30.000000Z\",\n        \"updated_at\": \"2024-08-19T03:51:30.000000Z\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Md Shah kk\",\n        \"email\": \"mdshahalam@gmail.com\",\n        \"mobile\": \"0162434343\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-22T10:32:53.000000Z\",\n        \"updated_at\": \"2024-10-13T09:57:41.000000Z\"\n    },\n    {\n        \"id\": 53,\n        \"name\": \"Md. Srabon Chowdhury\",\n        \"email\": \"fenixdy47@gmail.com\",\n        \"mobile\": \"01721136718\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-10-19T12:24:40.000000Z\",\n        \"updated_at\": \"2024-10-19T12:24:40.000000Z\"\n    },\n    {\n        \"id\": 60,\n        \"name\": \"Tanmoy\",\n        \"email\": \"a@gmail.com\",\n        \"mobile\": \"1111111111111111111\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-11-03T09:07:40.000000Z\",\n        \"updated_at\": \"2024-11-03T09:07:40.000000Z\"\n    },\n    {\n        \"id\": 64,\n        \"name\": \"Amrita Dey\",\n        \"email\": \"amrita123@gmail.com\",\n        \"mobile\": \"9443434\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-12-13T12:58:21.000000Z\",\n        \"updated_at\": \"2024-12-13T12:58:21.000000Z\"\n    },\n    {\n        \"id\": 65,\n        \"name\": \"abcd\",\n        \"email\": \"abc@gmail.com\",\n        \"mobile\": \"232323232\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-12-13T14:40:18.000000Z\",\n        \"updated_at\": \"2024-12-14T02:25:02.000000Z\"\n    },\n    {\n        \"id\": 67,\n        \"name\": \"demo1\",\n        \"email\": \"demo1@demo.com\",\n        \"mobile\": \"100000123\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-12-16T12:11:13.000000Z\",\n        \"updated_at\": \"2024-12-16T12:11:28.000000Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ProductModule",
+			"item": [
+				{
+					"name": "create-product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Demo",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "Demo",
+									"type": "text"
+								},
+								{
+									"key": "unit",
+									"value": "Demo",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/Users/rabbilhasan/Desktop/system_desing.png"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE}}/create-product",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"create-product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create-product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Demo",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "Demo",
+											"type": "text"
+										},
+										{
+											"key": "unit",
+											"value": "Demo",
+											"type": "text"
+										},
+										{
+											"key": "img",
+											"type": "file",
+											"src": "/Users/rabbilhasan/Desktop/system_desing.png"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/create-product",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"create-product"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "140"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:15:21 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Demo\",\n    \"price\": \"Demo\",\n    \"unit\": \"Demo\",\n    \"img_url\": \"uploads/1-1734351321-system_desing.png\",\n    \"category_id\": \"1\",\n    \"user_id\": \"1\",\n    \"updated_at\": \"2024-12-16T12:15:21.000000Z\",\n    \"created_at\": \"2024-12-16T12:15:21.000000Z\",\n    \"id\": 54\n}"
+						}
+					]
+				},
+				{
+					"name": "update-product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Demo",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "Demo",
+									"type": "text"
+								},
+								{
+									"key": "unit",
+									"value": "Demo",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/Users/rabbilhasan/Desktop/470604493_9186507401406419_8304079615317823050_n.jpg"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE}}/update-product",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"update-product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update-product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Demo",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "Demo",
+											"type": "text"
+										},
+										{
+											"key": "unit",
+											"value": "Demo",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "img",
+											"type": "file",
+											"src": "/Users/rabbilhasan/Desktop/470604493_9186507401406419_8304079615317823050_n.jpg"
+										},
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/update-product",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"update-product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "58"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:17:10 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "delete-product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"54\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/delete-product",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"delete-product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete-product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\":\"54\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/delete-product",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"delete-product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "56"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:19:29 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "product-by-id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/product-by-id",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"product-by-id"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "product-by-id",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n    \"id\":\"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/product-by-id",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"product-by-id"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "173"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:18:51 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"user_id\": 1,\n    \"category_id\": 1,\n    \"name\": \"Demo\",\n    \"price\": \"Demo\",\n    \"unit\": \"Demo\",\n    \"img_url\": \"uploads/1-1734351430-470604493_9186507401406419_8304079615317823050_n.jpg\",\n    \"created_at\": \"2024-08-19T04:56:33.000000Z\",\n    \"updated_at\": \"2024-12-16T12:17:10.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "list-product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE}}/list-product",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"list-product"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list-product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE}}/list-product",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"list-product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "55"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "887"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:19:43 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"category_id\": 1,\n        \"name\": \"Demo\",\n        \"price\": \"Demo\",\n        \"unit\": \"Demo\",\n        \"img_url\": \"uploads/1-1734351430-470604493_9186507401406419_8304079615317823050_n.jpg\",\n        \"created_at\": \"2024-08-19T04:56:33.000000Z\",\n        \"updated_at\": \"2024-12-16T12:17:10.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"user_id\": 1,\n        \"category_id\": 1,\n        \"name\": \"Create Product\",\n        \"price\": \"50\",\n        \"unit\": \"Create Product\",\n        \"img_url\": \"uploads/1-1724170941-1-1724057793-Sourdough-Bread-Recipe-for-Beginners.jpg\",\n        \"created_at\": \"2024-08-20T12:22:21.000000Z\",\n        \"updated_at\": \"2024-08-25T22:12:12.000000Z\"\n    },\n    {\n        \"id\": 15,\n        \"user_id\": 1,\n        \"category_id\": 2,\n        \"name\": \"cake\",\n        \"price\": \"1200\",\n        \"unit\": \"pcs\",\n        \"img_url\": \"uploads/1-1725070088-Makeup-Cake-2-720x720.webp\",\n        \"created_at\": \"2024-08-30T22:08:08.000000Z\",\n        \"updated_at\": \"2024-08-30T22:08:08.000000Z\"\n    },\n    {\n        \"id\": 25,\n        \"user_id\": 1,\n        \"category_id\": 2,\n        \"name\": \"as\",\n        \"price\": \"a\",\n        \"unit\": \"as\",\n        \"img_url\": \"uploads/1-1726864612-luemen-rutkowski-Sr-0bIyNkWc-unsplash.jpg\",\n        \"created_at\": \"2024-09-20T16:36:52.000000Z\",\n        \"updated_at\": \"2024-09-20T16:36:52.000000Z\"\n    },\n    {\n        \"id\": 26,\n        \"user_id\": 1,\n        \"category_id\": 2,\n        \"name\": \"sa\",\n        \"price\": \"sa\",\n        \"unit\": \"as\",\n        \"img_url\": \"uploads/1-1727446642-Screenshot 2024-09-17 at 7.22.52 PM.png\",\n        \"created_at\": \"2024-09-27T10:17:22.000000Z\",\n        \"updated_at\": \"2024-09-27T10:17:22.000000Z\"\n    },\n    {\n        \"id\": 27,\n        \"user_id\": 1,\n        \"category_id\": 8,\n        \"name\": \"as\",\n        \"price\": \"as\",\n        \"unit\": \"sa\",\n        \"img_url\": \"uploads/1-1727446657-Screenshot 2024-09-17 at 7.22.42 PM.png\",\n        \"created_at\": \"2024-09-27T10:17:37.000000Z\",\n        \"updated_at\": \"2024-09-27T10:17:37.000000Z\"\n    },\n    {\n        \"id\": 28,\n        \"user_id\": 1,\n        \"category_id\": 26,\n        \"name\": \"as\",\n        \"price\": \"as\",\n        \"unit\": \"as\",\n        \"img_url\": \"uploads/1-1727446683-Screenshot 2024-09-17 at 7.22.42 PM.png\",\n        \"created_at\": \"2024-09-27T10:18:03.000000Z\",\n        \"updated_at\": \"2024-09-27T10:18:03.000000Z\"\n    },\n    {\n        \"id\": 29,\n        \"user_id\": 1,\n        \"category_id\": 19,\n        \"name\": \"as\",\n        \"price\": \"as\",\n        \"unit\": \"sa\",\n        \"img_url\": \"uploads/1-1727446706-vinayak-sharma-vgv19wm8yQ4-unsplash.jpg\",\n        \"created_at\": \"2024-09-27T10:18:26.000000Z\",\n        \"updated_at\": \"2024-09-27T10:18:26.000000Z\"\n    },\n    {\n        \"id\": 30,\n        \"user_id\": 1,\n        \"category_id\": 58,\n        \"name\": \"asa\",\n        \"price\": \"sasa\",\n        \"unit\": \"sasa\",\n        \"img_url\": \"uploads/1-1727446741-new.jpg\",\n        \"created_at\": \"2024-09-27T10:19:01.000000Z\",\n        \"updated_at\": \"2024-09-27T10:19:01.000000Z\"\n    },\n    {\n        \"id\": 31,\n        \"user_id\": 1,\n        \"category_id\": 25,\n        \"name\": \"as\",\n        \"price\": \"sa\",\n        \"unit\": \"asa\",\n        \"img_url\": \"uploads/1-1727446771-guru.jpeg\",\n        \"created_at\": \"2024-09-27T10:19:31.000000Z\",\n        \"updated_at\": \"2024-09-27T10:19:31.000000Z\"\n    },\n    {\n        \"id\": 32,\n        \"user_id\": 1,\n        \"category_id\": 7,\n        \"name\": \"as\",\n        \"price\": \"as\",\n        \"unit\": \"as\",\n        \"img_url\": \"uploads/1-1727446793-450934321_122209782254197704_8325746035903920675_n.jpg\",\n        \"created_at\": \"2024-09-27T10:19:53.000000Z\",\n        \"updated_at\": \"2024-09-27T10:19:53.000000Z\"\n    },\n    {\n        \"id\": 33,\n        \"user_id\": 1,\n        \"category_id\": 26,\n        \"name\": \"asdas\",\n        \"price\": \"assad\",\n        \"unit\": \"342\",\n        \"img_url\": \"uploads/1-1727446844-topsquick01.jpg\",\n        \"created_at\": \"2024-09-27T10:20:44.000000Z\",\n        \"updated_at\": \"2024-09-27T10:20:44.000000Z\"\n    },\n    {\n        \"id\": 38,\n        \"user_id\": 1,\n        \"category_id\": 1,\n        \"name\": \"bread\",\n        \"price\": \"20\",\n        \"unit\": \"500\",\n        \"img_url\": \"uploads/1-1728347008-wheat-bread-wheat-shock-white-background-34095411.jpg\",\n        \"created_at\": \"2024-10-07T20:23:28.000000Z\",\n        \"updated_at\": \"2024-10-07T20:23:28.000000Z\"\n    },\n    {\n        \"id\": 40,\n        \"user_id\": 1,\n        \"category_id\": 23,\n        \"name\": \"cake\",\n        \"price\": \"500\",\n        \"unit\": \"2\",\n        \"img_url\": \"uploads/1-1728444043-messi-4k-ultra-hd-dramatic-t7otmb1xwl662a0r.png\",\n        \"created_at\": \"2024-10-08T23:20:43.000000Z\",\n        \"updated_at\": \"2024-10-08T23:20:43.000000Z\"\n    },\n    {\n        \"id\": 51,\n        \"user_id\": 1,\n        \"category_id\": 72,\n        \"name\": \"Asus Vibobook s15 530FA\",\n        \"price\": \"70000\",\n        \"unit\": \"Asus Vibobook s15 530FA\",\n        \"img_url\": \"uploads/1-1728880057-ASUS-VivoBook-15-K513EQ-600x600.jpg\",\n        \"created_at\": \"2024-10-14T00:27:37.000000Z\",\n        \"updated_at\": \"2024-10-14T00:29:01.000000Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DashboardModule",
+			"item": [
+				{
+					"name": "summary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/summary",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"summary"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "summary",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE}}/summary",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"summary"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "80"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:19:54 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"product\": 15,\n    \"category\": 18,\n    \"customer\": 10,\n    \"invoice\": 19,\n    \"total\": 165831.81,\n    \"vat\": 8291.6,\n    \"payable\": 174123.41\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "InvoiceModule",
+			"item": [
+				{
+					"name": "invoice-details",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"inv_id\":4,\n    \"cus_id\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/invoice-details",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"invoice-details"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "invoice-details",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"inv_id\":4,\n    \"cus_id\":2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/invoice-details",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"invoice-details"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "59"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "485"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:23:02 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"customer\": {\n        \"id\": 2,\n        \"name\": \"Emily Watson\",\n        \"email\": \"emily.watson@example.com\",\n        \"mobile\": \"+1234567890\",\n        \"user_id\": 1,\n        \"created_at\": \"2024-08-19T03:50:35.000000Z\",\n        \"updated_at\": \"2024-08-19T03:50:35.000000Z\"\n    },\n    \"invoice\": {\n        \"id\": 4,\n        \"total\": \"2749.72\",\n        \"discount\": \"27.77\",\n        \"vat\": \"137.49\",\n        \"payable\": \"2887.21\",\n        \"user_id\": 1,\n        \"customer_id\": 1,\n        \"created_at\": \"2024-08-20T12:28:18.000000Z\",\n        \"updated_at\": \"2024-08-20T12:28:18.000000Z\"\n    },\n    \"product\": [\n        {\n            \"id\": 8,\n            \"invoice_id\": 4,\n            \"product_id\": 1,\n            \"user_id\": 1,\n            \"qty\": \"5\",\n            \"sale_price\": \"27.50\",\n            \"created_at\": \"2024-08-20T12:28:18.000000Z\",\n            \"updated_at\": \"2024-08-20T12:28:18.000000Z\",\n            \"product\": {\n                \"id\": 1,\n                \"user_id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Demo\",\n                \"price\": \"Demo\",\n                \"unit\": \"Demo\",\n                \"img_url\": \"uploads/1-1734351430-470604493_9186507401406419_8304079615317823050_n.jpg\",\n                \"created_at\": \"2024-08-19T04:56:33.000000Z\",\n                \"updated_at\": \"2024-12-16T12:17:10.000000Z\"\n            }\n        },\n        {\n            \"id\": 9,\n            \"invoice_id\": 4,\n            \"product_id\": 3,\n            \"user_id\": 1,\n            \"qty\": \"55\",\n            \"sale_price\": \"2750.00\",\n            \"created_at\": \"2024-08-20T12:28:18.000000Z\",\n            \"updated_at\": \"2024-08-20T12:28:18.000000Z\",\n            \"product\": {\n                \"id\": 3,\n                \"user_id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Create Product\",\n                \"price\": \"50\",\n                \"unit\": \"Create Product\",\n                \"img_url\": \"uploads/1-1724170941-1-1724057793-Sourdough-Bread-Recipe-for-Beginners.jpg\",\n                \"created_at\": \"2024-08-20T12:22:21.000000Z\",\n                \"updated_at\": \"2024-08-25T22:12:12.000000Z\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "invoice-delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"inv_id\":72\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/invoice-delete",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"invoice-delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "invoice-delete",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"inv_id\":72\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/invoice-delete",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"invoice-delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "55"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:22:39 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "invoice-create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"total\":\"100\",\n    \"discount\":\"10\",\n    \"vat\":\"10\",\n    \"payable\":\"100\",\n    \"customer_id\":\"2\",\n    \"products\":[\n        {\"product_id\":6,\"qty\":1,\"sale_price\":\"300\"},\n        {\"product_id\":6,\"qty\":1,\"sale_price\":\"300\"}\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/invoice-create",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"invoice-create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "invoice-create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"total\":\"100\",\n    \"discount\":\"10\",\n    \"vat\":\"10\",\n    \"payable\":\"100\",\n    \"customer_id\":\"2\",\n    \"products\":[\n        {\"product_id\":6,\"qty\":1,\"sale_price\":\"300\"},\n        {\"product_id\":6,\"qty\":1,\"sale_price\":\"300\"}\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE}}/invoice-create",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"invoice-create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "content-type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "56"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "5"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:22:24 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "1"
+						}
+					]
+				},
+				{
+					"name": "invoice-select",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE}}/invoice-select",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"invoice-select"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "invoice-select",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "{{Token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE}}/invoice-select",
+									"host": [
+										"{{BASE}}"
+									],
+									"path": [
+										"invoice-select"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "PHP/8.3.9"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "60"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "57"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-length",
+									"value": "927"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 16 Dec 2024 12:22:10 GMT"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"total\": \"2749.72\",\n        \"discount\": \"27.77\",\n        \"vat\": \"137.49\",\n        \"payable\": \"2887.21\",\n        \"user_id\": 1,\n        \"customer_id\": 1,\n        \"created_at\": \"2024-08-20T12:28:18.000000Z\",\n        \"updated_at\": \"2024-08-20T12:28:18.000000Z\",\n        \"customer\": {\n            \"id\": 1,\n            \"name\": \"John Doe\",\n            \"email\": \"john.doe@example.com\",\n            \"mobile\": \"+1234567890\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:49:54.000000Z\",\n            \"updated_at\": \"2024-08-19T03:49:54.000000Z\"\n        }\n    },\n    {\n        \"id\": 5,\n        \"total\": \"16.46\",\n        \"discount\": \"0.04\",\n        \"vat\": \"0.82\",\n        \"payable\": \"17.28\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-20T12:29:15.000000Z\",\n        \"updated_at\": \"2024-08-20T12:29:15.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 6,\n        \"total\": \"55\",\n        \"discount\": \"0\",\n        \"vat\": \"2.75\",\n        \"payable\": \"57.75\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-20T13:44:15.000000Z\",\n        \"updated_at\": \"2024-08-20T13:44:15.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"total\": \"24.75\",\n        \"discount\": \"2.75\",\n        \"vat\": \"1.24\",\n        \"payable\": \"25.99\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-21T02:40:29.000000Z\",\n        \"updated_at\": \"2024-08-21T02:40:29.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 11,\n        \"total\": \"59.78\",\n        \"discount\": \"1.22\",\n        \"vat\": \"2.99\",\n        \"payable\": \"62.77\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-21T10:39:53.000000Z\",\n        \"updated_at\": \"2024-08-21T10:39:53.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 14,\n        \"total\": \"16.5\",\n        \"discount\": \"0\",\n        \"vat\": \"0.82\",\n        \"payable\": \"17.32\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-22T11:11:03.000000Z\",\n        \"updated_at\": \"2024-08-22T11:11:03.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 15,\n        \"total\": \"218.50\",\n        \"discount\": \"19.00\",\n        \"vat\": \"10.93\",\n        \"payable\": \"229.43\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-22T12:04:24.000000Z\",\n        \"updated_at\": \"2024-08-22T12:04:24.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 20,\n        \"total\": \"55\",\n        \"discount\": \"0\",\n        \"vat\": \"2.75\",\n        \"payable\": \"57.75\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-24T02:06:23.000000Z\",\n        \"updated_at\": \"2024-08-24T02:06:23.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 26,\n        \"total\": \"109.33\",\n        \"discount\": \"1.67\",\n        \"vat\": \"5.47\",\n        \"payable\": \"114.80\",\n        \"user_id\": 1,\n        \"customer_id\": 1,\n        \"created_at\": \"2024-08-25T22:13:32.000000Z\",\n        \"updated_at\": \"2024-08-25T22:13:32.000000Z\",\n        \"customer\": {\n            \"id\": 1,\n            \"name\": \"John Doe\",\n            \"email\": \"john.doe@example.com\",\n            \"mobile\": \"+1234567890\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:49:54.000000Z\",\n            \"updated_at\": \"2024-08-19T03:49:54.000000Z\"\n        }\n    },\n    {\n        \"id\": 29,\n        \"total\": \"244\",\n        \"discount\": \"0\",\n        \"vat\": \"12.20\",\n        \"payable\": \"256.20\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-08-26T23:32:35.000000Z\",\n        \"updated_at\": \"2024-08-26T23:32:35.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 30,\n        \"total\": \"55.36\",\n        \"discount\": \"0.14\",\n        \"vat\": \"2.77\",\n        \"payable\": \"58.13\",\n        \"user_id\": 1,\n        \"customer_id\": 16,\n        \"created_at\": \"2024-08-28T06:14:57.000000Z\",\n        \"updated_at\": \"2024-08-28T06:14:57.000000Z\",\n        \"customer\": {\n            \"id\": 16,\n            \"name\": \"Md Shah kk\",\n            \"email\": \"mdshahalam@gmail.com\",\n            \"mobile\": \"0162434343\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-22T10:32:53.000000Z\",\n            \"updated_at\": \"2024-10-13T09:57:41.000000Z\"\n        }\n    },\n    {\n        \"id\": 34,\n        \"total\": \"10.95\",\n        \"discount\": \"0.06\",\n        \"vat\": \"0.55\",\n        \"payable\": \"11.50\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-09-01T12:32:01.000000Z\",\n        \"updated_at\": \"2024-09-01T12:32:01.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 40,\n        \"total\": \"20455.5\",\n        \"discount\": \"0\",\n        \"vat\": \"1022.77\",\n        \"payable\": \"21478.27\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-09-11T05:09:33.000000Z\",\n        \"updated_at\": \"2024-09-11T05:09:33.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 60,\n        \"total\": \"72400\",\n        \"discount\": \"0\",\n        \"vat\": \"3620.00\",\n        \"payable\": \"76020.00\",\n        \"user_id\": 1,\n        \"customer_id\": 6,\n        \"created_at\": \"2024-10-14T00:46:44.000000Z\",\n        \"updated_at\": \"2024-10-14T00:46:44.000000Z\",\n        \"customer\": {\n            \"id\": 6,\n            \"name\": \"Olivia Brown\",\n            \"email\": \"olivia.brown@example.com\",\n            \"mobile\": \"+1234567894\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:30.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:30.000000Z\"\n        }\n    },\n    {\n        \"id\": 62,\n        \"total\": \"105.5\",\n        \"discount\": \"0\",\n        \"vat\": \"5.28\",\n        \"payable\": \"110.78\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-10-15T04:05:53.000000Z\",\n        \"updated_at\": \"2024-10-15T04:05:53.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    },\n    {\n        \"id\": 64,\n        \"total\": \"NaN\",\n        \"discount\": \"0\",\n        \"vat\": \"NaN\",\n        \"payable\": \"NaN\",\n        \"user_id\": 1,\n        \"customer_id\": 6,\n        \"created_at\": \"2024-10-16T00:52:23.000000Z\",\n        \"updated_at\": \"2024-10-16T00:52:23.000000Z\",\n        \"customer\": {\n            \"id\": 6,\n            \"name\": \"Olivia Brown\",\n            \"email\": \"olivia.brown@example.com\",\n            \"mobile\": \"+1234567894\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:30.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:30.000000Z\"\n        }\n    },\n    {\n        \"id\": 65,\n        \"total\": \"5800\",\n        \"discount\": \"0\",\n        \"vat\": \"290.00\",\n        \"payable\": \"6090.00\",\n        \"user_id\": 1,\n        \"customer_id\": 6,\n        \"created_at\": \"2024-10-19T08:38:20.000000Z\",\n        \"updated_at\": \"2024-10-19T08:38:20.000000Z\",\n        \"customer\": {\n            \"id\": 6,\n            \"name\": \"Olivia Brown\",\n            \"email\": \"olivia.brown@example.com\",\n            \"mobile\": \"+1234567894\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:30.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:30.000000Z\"\n        }\n    },\n    {\n        \"id\": 68,\n        \"total\": \"63450.00\",\n        \"discount\": \"7050.00\",\n        \"vat\": \"3172.50\",\n        \"payable\": \"66622.50\",\n        \"user_id\": 1,\n        \"customer_id\": 6,\n        \"created_at\": \"2024-10-24T13:26:48.000000Z\",\n        \"updated_at\": \"2024-10-24T13:26:48.000000Z\",\n        \"customer\": {\n            \"id\": 6,\n            \"name\": \"Olivia Brown\",\n            \"email\": \"olivia.brown@example.com\",\n            \"mobile\": \"+1234567894\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:30.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:30.000000Z\"\n        }\n    },\n    {\n        \"id\": 72,\n        \"total\": \"5.46\",\n        \"discount\": \"0.04\",\n        \"vat\": \"0.27\",\n        \"payable\": \"5.73\",\n        \"user_id\": 1,\n        \"customer_id\": 4,\n        \"created_at\": \"2024-10-28T00:45:52.000000Z\",\n        \"updated_at\": \"2024-10-28T00:45:52.000000Z\",\n        \"customer\": {\n            \"id\": 4,\n            \"name\": \"Sophia Martinez\",\n            \"email\": \"sophia.martinez@example.com\",\n            \"mobile\": \"+1234567892\",\n            \"user_id\": 1,\n            \"created_at\": \"2024-08-19T03:51:05.000000Z\",\n            \"updated_at\": \"2024-08-19T03:51:05.000000Z\"\n        }\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "sales-report",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE}}/sales-report/2023-08-14/2023-08-14",
+							"host": [
+								"{{BASE}}"
+							],
+							"path": [
+								"sales-report",
+								"2023-08-14",
+								"2023-08-14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsYXJhdmVsLXRva2VuIiwiaWF0IjoxNzU1Mjc0OTM0LCJleHAiOjE3NTc4NjY5MzQsInVzZXJFbWFpbCI6ImVuZ3IucmFiYmlsMDBAZ21haWwuY29tIiwidXNlcklEIjo0MjV9.US7jo4mgMLuMnJecPhDhEPIozJc7jB4xYKe8yi9rgDE",
+			"type": "string"
+		},
+		{
+			"key": "BASE",
+			"value": "https://inventory-api.teamrabbil.com/api",
+			"type": "string"
+		}
+	]
+}

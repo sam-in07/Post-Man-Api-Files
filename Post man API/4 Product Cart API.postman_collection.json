@@ -1,0 +1,855 @@
+{
+	"info": {
+		"_postman_id": "bb261150-0008-492a-8268-af2810db97db",
+		"name": "Product Cart API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39406886"
+	},
+	"item": [
+		{
+			"name": "user-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/user-login",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"user-login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user-login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/user-login",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"user-login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/8.3.9"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "59"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "72"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 02 Nov 2024 12:46:13 GMT"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": \"A 4 Digit OTP has been send to your email address\"\n}"
+				}
+			]
+		},
+		{
+			"name": "verify-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\",\n    \"OTP\":\"0000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/verify-login",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"verify-login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "verify-login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserEmail\":\"engr.rabbil@yahoo.com\",\n    \"OTP\":\"0000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/verify-login",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"verify-login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/8.3.9"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "58"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "208"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 02 Nov 2024 12:46:20 GMT"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzA1NTE1ODAsIm5iZiI6MTczMDU1MTU4MywiZXhwIjoxNzMwNjM3OTgwLCJVc2VyRW1haWwiOiJlbmdyLnJhYmJpbEB5YWhvby5jb20iLCJVc2VySUQiOjF9.X86oZQtlHRhc_yA7-PKvZlyWhB80a_KlkurktJ2-_cE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "product-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/product-list",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"product-list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "product-list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/product-list",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"product-list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/8.3.9"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "57"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "280"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 02 Nov 2024 12:46:23 GMT"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        },\n        {\n            \"id\": 16,\n            \"title\": \"MacBook Air M1 8/256GB\",\n            \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n            \"price\": \"94000\",\n            \"discount\": 0,\n            \"discount_price\": \"90000\",\n            \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n            \"stock\": 1,\n            \"star\": 5,\n            \"remark\": \"popular\",\n            \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n            \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "create-cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/create-cart/1",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"create-cart",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-cart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/create-cart/1",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"create-cart",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/8.3.9"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "56"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "97"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 02 Nov 2024 12:46:27 GMT"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": \"1\",\n        \"product_id\": \"1\",\n        \"created_at\": \"2024-11-02T02:31:03.000000Z\",\n        \"updated_at\": \"2024-11-02T02:31:03.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "remove-cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/remove-cart/9",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"remove-cart",
+						"9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "remove-cart",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/remove-cart/9",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"remove-cart",
+								"9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/8.3.9"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "55"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "30"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 02 Nov 2024 12:46:30 GMT"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "cart-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cart-api.teamrabbil.com/api/cart-list",
+					"protocol": "https",
+					"host": [
+						"cart-api",
+						"teamrabbil",
+						"com"
+					],
+					"path": [
+						"api",
+						"cart-list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cart-list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cart-api.teamrabbil.com/api/cart-list",
+							"protocol": "https",
+							"host": [
+								"cart-api",
+								"teamrabbil",
+								"com"
+							],
+							"path": [
+								"api",
+								"cart-list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "PHP/8.3.9"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "60"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "54"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "content-length",
+							"value": "262"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "date",
+							"value": "Sat, 02 Nov 2024 12:46:34 GMT"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"user_id\": 1,\n            \"product_id\": 1,\n            \"created_at\": \"2024-11-02T02:31:03.000000Z\",\n            \"updated_at\": \"2024-11-02T02:31:03.000000Z\",\n            \"product\": {\n                \"id\": 1,\n                \"title\": \"MacBook Air M1 8/256GB\",\n                \"short_des\": \"MacBook Air M1 8/256GB 13-inch Space Gray\",\n                \"price\": \"94000\",\n                \"discount\": 0,\n                \"discount_price\": \"90000\",\n                \"image\": \"https://cart-api.teamrabbil.com/image/product.jpeg\",\n                \"stock\": 1,\n                \"star\": 5,\n                \"remark\": \"popular\",\n                \"created_at\": \"2024-11-02T08:26:33.000000Z\",\n                \"updated_at\": \"2024-11-02T08:26:33.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTUyNzQ2NjIsIm5iZiI6MTc1NTI3NDY2NSwiZXhwIjoxNzU1MzYxMDYyLCJVc2VyRW1haWwiOiJlbmdyLnJhYmJpbEB5YWhvby5jb20iLCJVc2VySUQiOjF9.HvJ_iGkoh-1NGkw7SYsW1kquXZ-TN0Vmm6ZGURyFJoQ",
+			"type": "string"
+		}
+	]
+}
